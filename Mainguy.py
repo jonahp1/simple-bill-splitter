@@ -7,7 +7,7 @@ effective_tax_percentage = (tax_total / bill_total) * 100 # useful for human bei
 print("Effective Tax percentage is " + str(effective_tax_percentage))
 
 for person in range(attendees):
-    person += 1
+    person += 1 # this is done so the count does not start at 0. (ie. so nobody is referred to as "Name 0" but rather Name 1 - Name [numb(attendees)]
     name = input("\nName of customer " + str(person) + ": ")
     cost = float(input("What was " + name + "'s cost as shown on the right hand side of check? (DO NOT INCLUDE $) : "))
     plus_tax = cost + (cost * tax_percentage)
